@@ -1,0 +1,55 @@
+.editView {
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 12px 13px 38px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 13px 38px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 13px 38px -10px rgba(0, 0, 0, 0.75);
+  -webkit-animation: formAnimation 1s ease-out;
+  -moz-animation: formAnimation 1s ease-out;
+  -o-animation: formAnimation 1s ease-out;
+  animation: formAnimation 1s ease-out;
+}
+
+.editView__input-container{
+  display: flex;
+  padding: 15px 0;
+}
+
+.editView__wrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.input-container__title{
+  text-align: left;
+  padding: 0 25px 0  0;
+  font-weight: 400;
+  width: 100px;
+}
+.input-container__input{
+  border: none;
+  font-size: 18px;
+  width: 200px;
+  border-bottom: 1px solid;
+}
+.input-container__input:focus{
+  outline: none;
+}
+@-webkit-keyframes formAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
